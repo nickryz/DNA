@@ -1,0 +1,101 @@
+.advantage {
+    width: 100%;
+}
+
+    .advantage-wrap {
+        position: relative;
+        // background: whitesmoke;
+        display: flex;
+        align-items: center;
+        padding: 68px 0 80px;
+
+        &--withline {
+            &:after {
+                content: '';
+                position: absolute;
+                width: calc(100% + 30px);
+                height: 1px;
+                background: #ebebeb;
+                left: -15px;
+                bottom: 0;
+                transform: translateY(100%);
+            }
+        }
+    }
+
+                .advantage__item-imgblock {
+                    width: 50%;
+                    min-height: 502px;
+                    font-size: 0;
+
+                    &--science,
+                    &--discover {
+                        order: 2;
+                    }
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+
+                .img__services {
+                    margin: 0 0 0 5px;
+                }
+                
+                .img__science {
+                    margin: 0 0 0 46px;
+                }
+
+                .img__certified {
+                    margin: 59px 0 -24px 14px;
+                }
+                
+                .img__discover {
+                    margin: 10px 0 0 35px;
+                }
+
+                .advantage__item-descrblock {
+                    width: 50%;
+                    
+
+                    &--services {
+                        margin: 0 0 52px;
+                        padding-left: 72px;
+                    }
+                    
+                    &--certified {
+                        padding-left: 72px;
+                    }
+
+                    &--science {
+                        padding-right: 48px;
+                        margin:  0 0 26px;
+                    }
+                    
+                    &--discover {
+                        padding-right: 48px;
+                    }
+                }
+
+                    .descrblock__title {
+                        color:  #000;
+                        font-size: 2.25rem;
+                        font-weight: 700;
+                        margin: 0 0 26px;
+                        letter-spacing: 1px;
+                    }
+
+                    .descrblock__text {
+                        color:  #696969;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        margin: 0 0 28px;
+                        line-height: 1.24;
+                        letter-spacing: -0.25px;
+
+                        &:last-of-type {
+                            margin: 0;
+                        }
+                        
+                    }
+

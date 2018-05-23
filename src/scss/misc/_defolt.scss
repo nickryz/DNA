@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	min-height: 100vh;
+	font-family: $mainfont;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background: url(../img/bgEl/elipse_top_color.svg),
+				url(../img/bgEl/elipse_top_gray.svg),
+				url(../img/bgEl/elipse_bottom_color.svg),
+				url(../img/bgEl/elipse_bottom_gray.svg);
+	background-repeat: no-repeat;
+	background-position: center top,
+						 center top,
+						 center bottom,
+						 center bottom;
+	background-size: 1920px;
+	overflow-x: hidden;
+
+	@include tablet-pr {
+		// background-size: 1920px;
+		// background-position: center top,
+		// 				 center -50px;
+	}
+}
+
+.maincontent {
+	flex-grow: 1;
+}
+

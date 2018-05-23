@@ -1,0 +1,165 @@
+.header {
+    width: 100%;
+    background: rgba($color: #2e3192, $alpha: 0.12)
+}
+        .container {
+            @include container;
+        }
+            .header__navbar-wrap {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 38px 0 40px;
+            }
+                .logo {
+                    width: 285px;
+                }
+                    .logo__link {
+                        display: block;
+                        max-width: 100%;
+                        font-size: 0;
+                    }
+                        .logo__img {
+                            width: 100%;
+                        }
+                .nav-wrap {
+                    font-size: 0;
+                }
+                    .nav__list {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        display: inline-flex;
+                        justify-content: flex-end;
+                    }
+                        .nav {
+                            display: inline-block;
+                            vertical-align: middle;
+                        }    
+                            .nav__item {
+                                &:nth-child(1) {
+                                    margin-right: 45px;
+                                }
+                                &:nth-child(2) {
+                                    margin-right: 58px;
+                                }
+                                &:nth-child(3) {
+                                    margin-right: 40px;
+                                }
+                                &:nth-child(4) {
+                                }
+                            }
+                                .nav__link {
+                                    text-decoration: none;
+                                    color:  #ffffff;
+                                    font-size: 1.5rem;
+                                    font-weight: 700;
+                                    display: block;
+                                    position: relative;
+                                    padding-right: 23px;
+                                    letter-spacing: 0.45px;
+                                    
+                                    &:after {
+                                        content: '';
+                                        background: url(../img/menu/arrow-triangle.svg) center center no-repeat;
+                                        background-size: cover;
+                                        position: absolute;
+                                        width: 7px;
+                                        height: 6px;
+                                        top: 50%;
+                                        right: 0;
+                                        transform: translateY(100%);
+                                        opacity: 0;
+                                        transition: 0.3s transform 0.3s,
+                                                    0.3s opacity 0.3s;
+                                    }
+
+
+                                    &:hover:after {
+                                        transform: translateY(-50%);
+                                        opacity: 1;
+                                    }
+                                    
+                                    &:before {
+                                        content: '';
+                                        background: #fff;
+                                        position: absolute;
+                                        width: 0;
+                                        height: 2px;
+                                        bottom: 0;
+                                        left: 0;
+                                        transform: translateY(200%);
+                                        opacity: 0;
+                                        transition: width 0.3s,
+                                                    opacity 0.3s;
+                                    }
+
+
+                                    &:hover:before {
+                                        width: calc(100% - 23px);
+                                        opacity: 1;
+                                    }
+                                    
+                                }
+                        .basket-block {
+                            position: relative;
+                            width: 62px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-left: 37px;
+
+                            &:hover {
+                                animation: basket 0.6s linear; 
+
+                                @keyframes basket {
+                                0% {
+                                    transform: rotate(0deg);
+                                    }
+                                33% {
+                                    transform: rotate(-10deg);
+                                    }
+                                66% {
+                                    transform: rotate(10deg);
+                                    }
+                                100% {
+                                    transform: rotate(0deg);
+                                    }
+                                }
+                            }
+                        }
+                            .basket__link {
+                                display: block;
+                                width: 62px;
+                                height: 62px;
+                                border-radius: 50%;
+                                background-image: url(../img/menu/cart.png);
+                                background-size: 18px 18px;
+                                background-repeat: no-repeat;
+                                background-position: center center;
+                                background-color: rgba($color: #fff, $alpha: 0.2);
+                                
+                            }
+
+                            .basket__qty {
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 18px;
+                                height: 18px;
+                                border-radius: 50%;
+                                background-color: #ff6000;
+                                text-align: center;
+                                vertical-align: middle;
+
+                                span {
+                                    color:  #fff;
+                                    font-size: 0.875rem;
+                                    font-weight: 700;
+                                }
+                            }
+            
+
+
+

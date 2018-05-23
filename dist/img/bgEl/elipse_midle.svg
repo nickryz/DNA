@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="1894px" height="1672px" viewBox="0 0 1894 1672">
+<linearGradient id="linear_PSgrad_0" x1="-27.5%" y1="104.266%" x2="127.5%" y2="-4.26608%">
+    <stop offset="0%" stop-color="rgb(83,53,104)" stop-opacity="1" />
+    <stop offset="100%" stop-color="rgb(15,93,138)" stop-opacity="1" />
+</linearGradient>
+
+<clipPath id="clip0"><path fillRule="evenodd" d="M-179.03 1851C-179.03 1851-179.03-179.47-179.03-179.47-179.03-179.47 3179.97-179.47 3179.97-179.47 3179.97-179.47 3179.97 1851 3179.97 1851 3179.97 1851-179.03 1851-179.03 1851ZM 2716.52 291.78C 2669.91-162.14 2209.51 930.65 1379 761 548.49 591.35 263.25 318 186.41 1044.82 109.57 1771.63 848.29 877.83 2448.22 1463.43 3062.15 1688.14 2734.88 470.59 2716.52 291.78Z"/></clipPath><defs>
+<symbol id="symbol0"><path fillRule="evenodd" d="M 1379 761C 548.49 591.35 263.25 318 186.41 1044.82 109.57 1771.63 848.29 877.83 2448.22 1463.43 3062.15 1688.14 2734.88 470.59 2716.52 291.78 2669.91-162.14 2209.51 930.65 1379 761Z"/></symbol></defs>
+<g><use xlink:href="#symbol0" x="0" y="0" width="3001" height="1672" fill="url(#linear_PSgrad_0)"/><use xlink:href="#symbol0" x="0" y="0" width="3001" height="1672" fill="none" stroke="rgb(0,0,0)" stroke-width="480.00px" stroke-opacity="0.07" clip-path="url(#clip0)"/></g></svg>

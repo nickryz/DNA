@@ -1,0 +1,74 @@
+.faq {
+    margin: 194px 0 330px;
+}
+    .question-wrap {
+        padding: 16px 0;
+        margin-bottom: 68px; 
+    }
+        .question__title {
+            color:  #000;
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin: 0 0 26px;
+        }
+
+        .question__text {
+            color:  #696969;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+    .faq-wrap {
+        padding: 16px 0 0;
+    }
+    
+        .faq__item-block:nth-of-type(1) {
+            .faq__item-title {
+                margin: 0 0 12px;
+            }
+        }
+             .faq__title {
+                color:  #000;
+                font-size: 2rem;
+                font-weight: 700;
+                margin: 0 0 68px;
+            }    
+                .faq__text-column-wrap {
+                    column-count: 3;
+                    column-gap: 60px;
+                }
+                    .faq__item-block {
+                    }
+                        .faq__item-title {
+                            color:  #000000;
+                            font-size: 1.625rem;
+                            font-weight: 400;
+                            margin: 50px 0 12px;
+                            line-height: 1.17;
+                        }
+
+                        .faq__item-text {
+                            color:  #696969;
+                            font-size: 0.875rem;
+                            font-weight: 400;
+                            margin: 0 0 19px;
+                            line-height: 1.2;
+                            letter-spacing: -0.14px;
+                            
+                            &:last-of-type {
+                                margin: 0;
+                            }
+                        }
+                        
+                        .faq__item-linkwrap {
+                            margin: 20px 0 -16px;
+                        }
+                            .faq__item-link {
+                                color:  #2d6fc1;
+                                font-size: 0.875rem;
+                                font-weight: 400;
+                                display: inline-block;
+                            }
+
+
