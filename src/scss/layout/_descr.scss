@@ -1,22 +1,53 @@
 .descr {
     margin: 72px 0 88px;
     width: 100%;
+
+    @include tablet-pr {
+        margin-bottom: 98px;
+    }
+    
+    @include mobile {
+        margin: 30px 0 58px;
+    }
 }
     .descr-wrap {
         font-size: 0;
         width: 100%;
         position: relative;
         display: flex;
+
+        @include tablet-ls {
+            flex-wrap: wrap;
+        }
     }           
         .descr__text-block {
             width: 43.5%;
             color:  #fff;
             margin-top: 85px;
+
+            @include tablet-ls {
+                width: 100%;
+                order: 2;
+                text-align: center;
+            }
+
+            @include tablet-pr {
+                margin-top: 30px;
+            }
+
+            @include mobile {
+                margin-top: 22px;
+            }
         }
             .text-block__pretitle {
                 font-size: 1rem;
                 font-weight: 400;
                 margin: 0 0 5px -1px;
+
+                @include tablet-pr {
+                    margin: 0 0 22px -1px;
+                    letter-spacing: -0.3px;
+                }
             }
             
             .text-block__title {
@@ -25,6 +56,15 @@
                 line-height: 1;
                 letter-spacing: 1px;
                 margin: 0 0 34px;
+
+                 @include tablet-pr {
+                    margin: 0 0 29px;
+                    letter-spacing: 0.4px;
+                }
+                
+                @include mobile {
+                    font-size: 2.25rem;
+                }
             }
             
             .text-block__text {
@@ -33,6 +73,15 @@
                 line-height: 1.429;
                 letter-spacing: -0.18px;
                 margin: 0 0 55px;
+
+                @include tablet-pr {
+                    margin: 0 0 58px;
+                }
+
+                @include mobile {
+                    line-height: 1.286;
+                    margin: 0 0 28px;
+                }
             }
 
             .text-block__btn {
@@ -54,6 +103,11 @@
                 &:hover {
                     background: rgb(209, 91, 17);
                 }
+
+                @include tablet-pr {
+                    width: 272px;
+                    margin-bottom: 27px;
+                }
             }
 
             .text-block__file-link {
@@ -63,14 +117,43 @@
                 font-weight: 400;
                 text-align: left;
                 letter-spacing: -0.3px;
+
+                @include tablet-ls {
+                    text-align: center;
+                }
+
+                @include mobile {
+                    font-size: 1rem;
+                }
             }
         .descr__img-block {
             width: 56.5%;
             position: relative;
             vertical-align:top;
+            
+            @include tablet-ls {
+                width: 100%;
+            }
         }
             .descr__img-wrap {
                 width: 792px;
                 height: 596px;
                 background: url(../img/main.png) center top no-repeat;
+
+                @include tablet-ls {
+                    margin: 0 auto;
+                    background-size: contain;
+                }
+
+                @include tablet-pr {
+                    background: url(../img/main_768.png) center top no-repeat;
+                    width: 473px;
+                    height: 375px;
+                }
+
+                @include mobile {
+                   width: 100%;
+                   height: 212px;
+                   background-size: contain;
+                }
             }

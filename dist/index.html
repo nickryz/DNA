@@ -46,7 +46,23 @@
 						</nav>
 						<div class="basket-block">
 							<a href="#" class="basket__link"></a>
-							<div class="basket__qty"><span>1</span></div>
+							<div class="basket__qty">
+								<span class="basket__qty-number">1</span>
+							</div>
+						</div>
+					</div>
+					<div id="menu-toggle">
+						<div class="basket__qty basket__qty--burger">
+							<span class="basket__qty-number">1</span>
+						</div>
+						<div id="hamburger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div id="cross">
+							<span></span>
+							<span></span>
 						</div>
 					</div>
 				</div>
@@ -255,7 +271,7 @@
 		<!-- ./CERTIFIED -->
 
 		<!-- DISCOVER -->
-		<section id="science" class="advantage">
+		<section id="discover" class="advantage">
 			<div class="container">
 				<div class="advantage-wrap advantage-wrap--withline advantage-wrap--discover">
 					<div class="advantage__item-imgblock advantage__item-imgblock--discover">
@@ -278,6 +294,8 @@
 		<!-- ./DISCOVER -->
 
 		<!-- QUESTION + FAQ -->
+
+		
 		<section class="faq">
 			<div class="container">
 				<div class="question-wrap">
@@ -291,35 +309,43 @@
 				</div>
 				<div class="faq-wrap">
 					<h2 class="faq__title">FAQ</h2>
-					<div class="faq__text-column-wrap">
+					
+					
+					<!-- **** DESKTOP CONTENT **** -->
+					
+					<div class="faq__text-column-wrap faq__text-column-wrap--desktop">
 						
 						<!-- 1 -->
 
 						<div class="faq__item-block">
 							<h3 class="faq__item-title">How does it work?</h3>
-							<p class="faq__item-text">
-								Your DNA analysis is performed in US laboratories that are certified to meet CLIA standards—the Clinical Laboratory Improvement
-								Amendments of 1988.
-							</p>
-							<p class="faq__item-text">
-								A CLIA-certified lab must meet certain quality standards, including qualifications for individuals who perform the test
-								and other standards that ensure the accuracy and reliability of results.
-							</p>
-							<p class="faq__item-text">
-								We use leading technology to genotype your DNA—a custom Illumina HumanOmniExpress-24 format chip.
-							</p>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									Your DNA analysis is performed in US laboratories that are certified to meet CLIA standards—the Clinical Laboratory Improvement
+									Amendments of 1988.
+								</p>
+								<p class="faq__item-text">
+									A CLIA-certified lab must meet certain quality standards, including qualifications for individuals who perform the test
+									and other standards that ensure the accuracy and reliability of results.
+								</p>
+								<p class="faq__item-text">
+									We use leading technology to genotype your DNA—a custom Illumina HumanOmniExpress-24 format chip.
+								</p>
+							</div>
 						</div>	
 						
 						<!-- 2 -->
 
 						<div class="faq__item-block">
 							<h3 class="faq__item-title">Customer Stories. Genetic Journeys.</h3>
-							<p class="faq__item-text">
-								 We hear from thousands of customers around the world who write in to tell us about their 23andMe experience—and the impact
-								it has had on their life.
-							</p>
-							<div class="faq__item-linkwrap">
-								<a href="#" class="faq__item-link">See stories that inspire us.</a>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									We hear from thousands of customers around the world who write in to tell us about their 23andMe experience—and the impact
+									it has had on their life.
+								</p>
+								<div class="faq__item-linkwrap">
+									<a href="#" class="faq__item-link">See stories that inspire us.</a>
+								</div>
 							</div>
 						</div>	
 
@@ -327,60 +353,68 @@
 
 						<div class="faq__item-block">
 							<h3 class="faq__item-title">What service do you provide?</h3>
-							<p class="faq__item-text">
-								Due to applicable regulations, 23andMe only offers an Ancestry Personal Genetic Service in international markets and health
-								reports are not available. The service is in English only. It requires submitting a saliva sample using our saliva collection
-								kit that you send to the lab for analysis.
-							</p>
-							<p class="faq__item-text">
-								 Our Ancestry Service helps you understand who you are, where your DNA comes from and your family story. We analyze, compile
-								and distill your DNA information into reports on your Ancestry Composition, Haplogroups, Neanderthal Ancestry, Your DNA Family
-								and provide a DNA Relatives tool to enable you to connect with relatives who share similar DNA.
-							</p>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									Due to applicable regulations, 23andMe only offers an Ancestry Personal Genetic Service in international markets and health
+									reports are not available. The service is in English only. It requires submitting a saliva sample using our saliva collection
+									kit that you send to the lab for analysis.
+								</p>
+								<p class="faq__item-text">
+									Our Ancestry Service helps you understand who you are, where your DNA comes from and your family story. We analyze, compile
+									and distill your DNA information into reports on your Ancestry Composition, Haplogroups, Neanderthal Ancestry, Your DNA Family
+									and provide a DNA Relatives tool to enable you to connect with relatives who share similar DNA.
+								</p>
+							</div>
 						</div>
 						
 						<!-- 4 -->
 
 						<div class="faq__item-block">
 							<h3 class="faq__item-title">How your DNA becomes a report.</h3>
-							<p class="faq__item-text">
-								Human DNA is about 99.5% identical from person to person. However, there are small differences that make each person unique.
-								These differences are called variants.
-							</p>
-							<p class="faq__item-text">
-								Your DNA was passed down from your parents—and their parents and so on. Variants can be linked to certain health conditions,
-								traits and ancestry groups.
-							</p>
-							<p class="faq__item-text">
-								Your saliva contains DNA from cells in your mouth. We send you a saliva collection kit and instructions for providing your
-								sample.
-							</p>
-							<p class="faq__item-text">
-								Our CLIA-certified lab extracts DNA from cells in your saliva sample. Then the lab processes the DNA on a genotyping chip
-								that reads hundreds of thousands of variants in your genome.
-							</p>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									Human DNA is about 99.5% identical from person to person. However, there are small differences that make each person unique.
+									These differences are called variants.
+								</p>
+								<p class="faq__item-text">
+									Your DNA was passed down from your parents—and their parents and so on. Variants can be linked to certain health conditions,
+									traits and ancestry groups.
+								</p>
+								<p class="faq__item-text">
+									Your saliva contains DNA from cells in your mouth. We send you a saliva collection kit and instructions for providing your
+									sample.
+								</p>
+								<p class="faq__item-text">
+									Our CLIA-certified lab extracts DNA from cells in your saliva sample. Then the lab processes the DNA on a genotyping chip
+									that reads hundreds of thousands of variants in your genome.
+								</p>
+							</div>
 						</div>
 						
 						<!-- 5 -->
 
 						<div class="faq__item-block">
 							<h3 class="faq__item-title">Why genetics is only part of the story.</h3>
-							<p class="faq__item-text">
-								Human DNA is about 99.5% identical from person to person. However, there are small differences that make each person unique.
-								These differences are called variants.
-							</p>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									Human DNA is about 99.5% identical from person to person. However, there are small differences that make each person unique.
+									These differences are called variants.
+								</p>
+							</div>
 						</div>
 						
 						<!-- 6 -->
 
 						<div class="faq__item-block">
 							<h3 class="faq__item-title">Our process at work.</h3>
-							<p class="faq__item-text">
-								To ensure quality, your DNA analysis is performed in US laboratories that are certified by CLIA (Clinical Laboratory Improvement
-								Amendments of 1988) and accredited by the College of American Pathologists (CAP).
-							</p>
-							<div class="faq__item-linkwrap">
-								<a href="#" class="faq__item-link">More about our lab.</a>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									To ensure quality, your DNA analysis is performed in US laboratories that are certified by CLIA (Clinical Laboratory Improvement
+									Amendments of 1988) and accredited by the College of American Pathologists (CAP).
+								</p>
+								<div class="faq__item-linkwrap">
+									<a href="#" class="faq__item-link">More about our lab.</a>
+								</div>
 							</div>
 						</div>
 						
@@ -389,29 +423,33 @@
 						
 						<div class="faq__item-block">
 							<h3 class="faq__item-title">How does it work?</h3>
-							<p class="faq__item-text">
-								Your DNA analysis is performed in US laboratories that are certified to meet CLIA standards—the Clinical Laboratory Improvement
-								Amendments of 1988.
-							</p>
-							<p class="faq__item-text">
-								A CLIA-certified lab must meet certain quality standards, including qualifications for individuals who perform the test and
-								other standards that ensure the accuracy and reliability of results.
-							</p>
-							<p class="faq__item-text">
-								We use leading technology to genotype your DNA—a custom Illumina HumanOmniExpress-24 format chip.
-							</p>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									Your DNA analysis is performed in US laboratories that are certified to meet CLIA standards—the Clinical Laboratory Improvement
+									Amendments of 1988.
+								</p>
+								<p class="faq__item-text">
+									A CLIA-certified lab must meet certain quality standards, including qualifications for individuals who perform the test and
+									other standards that ensure the accuracy and reliability of results.
+								</p>
+								<p class="faq__item-text">
+									We use leading technology to genotype your DNA—a custom Illumina HumanOmniExpress-24 format chip.
+								</p>
+							</div>
 						</div>
 						
 						<!-- 8 -->
 						
 						<div class="faq__item-block">
 							<h3 class="faq__item-title">Customer Stories. Genetic Journeys.</h3>
-							<p class="faq__item-text">
-								We hear from thousands of customers around the world who write in to tell us about their 23andMe experience—and the impact
-								it has had on their life.
-							</p>
-							<div class="faq__item-linkwrap">
-								<a href="#" class="faq__item-link">See stories that inspire us.</a>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									We hear from thousands of customers around the world who write in to tell us about their 23andMe experience—and the impact
+									it has had on their life.
+								</p>
+								<div class="faq__item-linkwrap">
+									<a href="#" class="faq__item-link">See stories that inspire us.</a>
+								</div>
 							</div>
 						</div>
 						
@@ -419,19 +457,134 @@
 						
 						<div class="faq__item-block">
 							<h3 class="faq__item-title">What service do you provide?</h3>
-							<p class="faq__item-text">
-								Due to applicable regulations, 23andMe only offers an Ancestry Personal Genetic Service in international markets and health
-								reports are not available. The service is in English only. It requires submitting a saliva sample using our saliva collection
-								kit that you send to the lab for analysis.
-							</p>
-							<p class="faq__item-text">
-								Our Ancestry Service helps you understand who you are, where your DNA comes from and your family story. We analyze, compile
-								and distill your DNA information into reports on your Ancestry Composition, Haplogroups, Neanderthal Ancestry, Your DNA
-								Family and provide a DNA Relatives tool to enable you to connect with relatives who share similar DNA.
-							</p>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									Due to applicable regulations, 23andMe only offers an Ancestry Personal Genetic Service in international markets and health
+									reports are not available. The service is in English only. It requires submitting a saliva sample using our saliva collection
+									kit that you send to the lab for analysis.
+								</p>
+								<p class="faq__item-text">
+									Our Ancestry Service helps you understand who you are, where your DNA comes from and your family story. We analyze, compile
+									and distill your DNA information into reports on your Ancestry Composition, Haplogroups, Neanderthal Ancestry, Your DNA
+									Family and provide a DNA Relatives tool to enable you to connect with relatives who share similar DNA.
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<!-- **** ./DESKTOP CONTENT **** -->
+					
+
+					<!-- **** TABLET/MOBILE CONTENT **** -->
+
+					<div class="faq__text-column-wrap faq__text-column-wrap--mobile">
+
+						<!-- 1 -->
+						
+						<div class="faq__item-block">
+							<h3 class="faq__item-title">How does it work?</h3>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									Your DNA analysis is performed in US laboratories that are certified to meet CLIA standards—the Clinical Laboratory Improvement
+									Amendments of 1988.
+								</p>
+								<p class="faq__item-text">
+									A CLIA-certified lab must meet certain quality standards, including qualifications for individuals who perform the test and
+									other standards that ensure the accuracy and reliability of results.
+								</p>
+								<p class="faq__item-text">
+									We use leading technology to genotype your DNA—a custom Illumina HumanOmniExpress-24 format chip.
+								</p>
+							</div>
+						</div>
+
+						<!-- 2 -->
+						
+						<div class="faq__item-block">
+							<h3 class="faq__item-title">What service do you provide?</h3>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									Due to applicable regulations, 23andMe only offers an Ancestry Personal Genetic Service in international markets and health
+									reports are not available. The service is in English only. It requires submitting a saliva sample using our saliva collection
+									kit that you send to the lab for analysis.
+								</p>
+								<p class="faq__item-text">
+									Our Ancestry Service helps you understand who you are, where your DNA comes from and your family story. We analyze, compile
+									and distill your DNA information into reports on your Ancestry Composition, Haplogroups, Neanderthal Ancestry, Your DNA
+									Family and provide a DNA Relatives tool to enable you to connect with relatives who share similar DNA.
+								</p>
+							</div>
+						</div>
+
+						<!-- 3 -->
+						
+						<div class="faq__item-block">
+							<h3 class="faq__item-title">Why genetics is only part of the story.</h3>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									Human DNA is about 99.5% identical from person to person. However, there are small differences that make each person unique.
+									These differences are called variants.
+								</p>
+							</div>
+						</div>
+
+						<!-- 4 -->
+						
+						<div class="faq__item-block">
+							<h3 class="faq__item-title">How your DNA becomes a report.</h3>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									Human DNA is about 99.5% identical from person to person. However, there are small differences that make each person unique.
+									These differences are called variants.
+								</p>
+								<p class="faq__item-text">
+									Your DNA was passed down from your parents—and their parents and so on. Variants can be linked to certain health conditions,
+									traits and ancestry groups.
+								</p>
+								<p class="faq__item-text">
+									Your saliva contains DNA from cells in your mouth. We send you a saliva collection kit and instructions for providing your
+									sample.
+								</p>
+								<p class="faq__item-text">
+									Our CLIA-certified lab extracts DNA from cells in your saliva sample. Then the lab processes the DNA on a genotyping chip
+									that reads hundreds of thousands of variants in your genome.
+								</p>
+							</div>
+						</div>
+
+						<!-- 5 -->
+						
+						<div class="faq__item-block">
+							<h3 class="faq__item-title">Our process at work.</h3>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									To ensure quality, your DNA analysis is performed in US laboratories that are certified by CLIA (Clinical Laboratory Improvement
+									Amendments of 1988) and accredited by the College of American Pathologists (CAP).
+								</p>
+								<div class="faq__item-linkwrap">
+									<a href="#" class="faq__item-link">More about our lab.</a>
+								</div>
+							</div>
 						</div>
 						
+						<!-- 6 -->
+						
+						<div class="faq__item-block">
+							<h3 class="faq__item-title">Customer Stories. Genetic Journeys.</h3>
+							<div class="faq__item-textblock">
+								<p class="faq__item-text">
+									We hear from thousands of customers around the world who write in to tell us about their 23andMe experience—and the impact
+									it has had on their life.
+								</p>
+								<div class="faq__item-linkwrap">
+									<a href="#" class="faq__item-link">See stories that inspire us.</a>
+								</div>
+							</div>
+						</div>
 					</div>
+
+					<!-- **** ./TABLET/MOBILE CONTENT **** -->
+
 				</div>
 			</div>
 		</section>
@@ -444,6 +597,13 @@
 	<!-- footer -->
 	<div class="main-footer"></div>
 	<!-- ./footer -->
-	
+
+	<!-- MODULES -->
+
+	<div class="overlay"></div>
+
+	<!-- SCRIPTS -->
+
+	<script src="js/main.min.js"></script>
 </body>
 </html>

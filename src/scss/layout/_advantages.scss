@@ -4,10 +4,19 @@
 
     .advantage-wrap {
         position: relative;
-        // background: whitesmoke;
         display: flex;
         align-items: center;
         padding: 68px 0 80px;
+
+        @include tablet-pr {
+            flex-wrap: wrap;
+            align-items: flex-start;
+            padding: 68px 0 70px;
+        }
+
+        @include mobile {
+            padding: 48px 0 35px;
+        }
 
         &--withline {
             &:after {
@@ -19,6 +28,11 @@
                 left: -15px;
                 bottom: 0;
                 transform: translateY(100%);
+
+                @include tablet-pr {
+                    left: 0;
+                    width: 100%;
+                }
             }
         }
     }
@@ -27,53 +41,140 @@
                     width: 50%;
                     min-height: 502px;
                     font-size: 0;
+                    
+                    @include tablet-pr {
+                        width: 100%;
+                        text-align: center;
+                        min-height: 0;
+                    }
 
                     &--science,
                     &--discover {
                         order: 2;
+
+                        @include tablet-pr {
+                            order: 0;
+                        }
                     }
 
                     img {
                         max-width: 100%;
+                        
                     }
                 }
 
                 .img__services {
                     margin: 0 0 0 5px;
+
+                    @include tablet-pr {
+                        margin: 0;
+                        max-height: 472px;
+                    }
+
+                    @include mobile {
+                        width: 67%;
+                    }
                 }
                 
                 .img__science {
                     margin: 0 0 0 46px;
+
+                    @include tablet-pr {
+                        margin: 47px 0 0 46px;
+                        max-height: 349px;
+                    }
+
+                    @include mobile {
+                        margin: 20px 0 0 0;
+                        width: 70%;
+                    }
                 }
 
                 .img__certified {
                     margin: 59px 0 -24px 14px;
+
+                    @include tablet-pr {
+                        margin: 0 0 0 -14px;
+                        max-height: 360px;
+                    }
+                   
+                    @include mobile {
+                        width: 63%;
+                        margin: 7px 0 0 -14px;
+                    }
                 }
                 
                 .img__discover {
                     margin: 10px 0 0 35px;
+
+                    @include tablet-pr {
+                        margin: 24px 0 0 -16px;
+                        max-height: 383px;
+                    }
+
+                    @include mobile {
+                        width: 63%;
+                        margin: 14px 0 0 -14px;
+                    }
                 }
 
                 .advantage__item-descrblock {
                     width: 50%;
+
+                    @include tablet-pr {
+                        width: 100%;
+                        text-align: center;
+                    }
                     
 
                     &--services {
                         margin: 0 0 52px;
                         padding-left: 72px;
+
+                        @include tablet-pr {
+                            padding-left: 0;
+                            margin: 0;
+                        }
                     }
                     
                     &--certified {
                         padding-left: 72px;
-                    }
 
+                        @include tablet-pr {
+                            padding-left: 0;
+                            margin-top: 38px;
+                        }
+                        
+                        @include mobile {
+                            margin-top: 5px;
+                        }
+                    }
+                    
                     &--science {
                         padding-right: 48px;
                         margin:  0 0 26px;
+                        
+                        @include tablet-pr {
+                            padding-right: 0;
+                            margin: 26px 0 0;
+                        }
+
+                         @include mobile {
+                            margin: 8px 0 0 0;
+                        }
                     }
                     
                     &--discover {
                         padding-right: 48px;
+
+                        @include tablet-pr {
+                            padding-right: 0;
+                            margin-top: 30px;
+                        }
+
+                         @include mobile {
+                            margin: 10px 0 0 0;
+                        }
                     }
                 }
 
@@ -83,6 +184,16 @@
                         font-weight: 700;
                         margin: 0 0 26px;
                         letter-spacing: 1px;
+
+                        @include tablet-pr {
+                            padding: 0 140px;
+                        }
+
+                        @include mobile {
+                            padding: 0;
+                            font-size: 1.5rem;
+                            margin: 15px 0 23px;
+                        }
                     }
 
                     .descrblock__text {
@@ -92,6 +203,16 @@
                         margin: 0 0 28px;
                         line-height: 1.24;
                         letter-spacing: -0.25px;
+
+                        @include tablet-pr {
+                            letter-spacing: -0.15px;
+                        }
+
+                        @include mobile {
+                            padding: 0;
+                            font-size: 0.875rem;
+                            margin: 0 0 15px;
+                        }
 
                         &:last-of-type {
                             margin: 0;

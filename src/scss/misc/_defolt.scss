@@ -11,20 +11,57 @@ html, body {
 body {
 	display: flex;
 	flex-direction: column;
-	background: url(../img/bgEl/elipse_top_color.svg),
-				url(../img/bgEl/elipse_top_gray.svg),
-				url(../img/bgEl/elipse_bottom_color.svg),
-				url(../img/bgEl/elipse_bottom_gray.svg);
+	background: url(../img/bgEl/main/elipse_top_color.svg),
+				url(../img/bgEl/main/elipse_top_gray.svg),
+				url(../img/bgEl/main/elipse_bottom_color.svg),
+				url(../img/bgEl/main/elipse_bottom_gray.svg);
 	background-repeat: no-repeat;
 	background-position: center top,
 						 center top,
 						 center bottom,
 						 center bottom;
 	background-size: 1920px;
+
+	@include tablet-ls {
+		background: url(../img/bgEl/768/elipse_top_color.svg),
+					url(../img/bgEl/768/elipse_top_gray.svg),
+					url(../img/bgEl/768/elipse_bottom_color.svg),
+					url(../img/bgEl/768/elipse_bottom_gray.svg);
+		background-repeat: no-repeat;
+		background-position: center top,
+							center top,
+							center bottom,
+							center bottom;
+		background-size: 1200px;
+	}
+
+	@include tablet-pr {
+		background-size: 968px;
+	}
+	
 }
 
 .maincontent {
 	flex-grow: 1;
 	overflow: hidden;
+}
+
+.main-footer {
+	height: 330px;
+
+	@include tablet-pr {
+		height: 475px;
+	}
+	
+	@include mobile {
+		height: 282px;
+	}
+}
+
+.overlay {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	display: none;
 }
 

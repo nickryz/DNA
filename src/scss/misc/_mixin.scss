@@ -1,6 +1,7 @@
 $mq-tablet-ls				: 1210px !default;
-$mq-tablet-pr				: 992px !default;
-$mq-mobile					: 768px !default;
+$mq-tablet-pr				: 968px !default;
+$mq-mobile					: 766px !default;
+$mq-mobile-pr				: 480px !default;
 
 @mixin tablet-ls {
 	@media (max-width : $mq-tablet-ls) {
@@ -19,6 +20,11 @@ $mq-mobile					: 768px !default;
 		@content;
 	}
 }
+@mixin mobile-pr {
+	@media (max-width : $mq-mobile-pr) {
+		@content;
+	}
+}
 
 
 @mixin container {
@@ -26,17 +32,19 @@ $mq-mobile					: 768px !default;
 	margin: 0 auto;
 	padding: 0 15px;
 	// overflow: hidden;
-	position: relative;
+	// position: relative;
 
 	@include tablet-ls {
 		width: 1024px;
+		padding: 0 24px; 
 	}
 	
 	@include tablet-pr {
-		width: 783px; 
+		width: 768px;
 	}
 
 	@include mobile {
 		width: 100%; 
+		padding: 0 20px; 
 	}
 }

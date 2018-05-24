@@ -1,15 +1,55 @@
 .faq {
-    margin: 194px 0 330px;
+    margin: 194px 0 0;
+
+    @include tablet-pr {
+        margin: 68px 0 0;
+        text-align: center;
+    }
+    
+    @include mobile {
+        margin: 37px 0 0;
+    }
 }
     .question-wrap {
         padding: 16px 0;
         margin-bottom: 68px; 
+        position: relative;
+
+        @include tablet-pr {
+            margin-bottom: 64px; 
+            padding: 16px 0 82px;
+             &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background: #ebebeb;
+                bottom: 0;
+                left: 0;
+                transform: translateY(100%);
+            }
+        }
+
+        @include mobile {
+            font-size: 1.5rem;
+            margin: 0 0 40px;
+            padding: 16px 0 45px;
+        }
     }
         .question__title {
             color:  #000;
             font-size: 2.25rem;
             font-weight: 700;
             margin: 0 0 26px;
+
+            @include tablet-pr {
+                margin: 0 0 30px;
+            }
+            
+            @include mobile {
+                font-size: 1.5rem;
+                margin: 0 0 17px;
+            }
         }
 
         .question__text {
@@ -17,35 +57,125 @@
             font-size: 1.5rem;
             font-weight: 400;
             margin: 0;
+
+            @include mobile {
+                font-size: 0.875rem;
+            }
         }
 
     .faq-wrap {
         padding: 16px 0 0;
+
+        @include tablet-pr {
+            text-align: center;
+        }
     }
     
         .faq__item-block:nth-of-type(1) {
-            .faq__item-title {
-                margin: 0 0 12px;
-            }
+            // .faq__item-title {
+            //     margin: 0 0 12px;
+
+            //     @include tablet-pr {
+            //         margin: 0;
+            //     }
+            // }
         }
              .faq__title {
                 color:  #000;
                 font-size: 2rem;
                 font-weight: 700;
                 margin: 0 0 68px;
+
+                @include tablet-pr {
+                  margin: 0 0 82px;
+                }
+                
+                @include mobile {
+                  font-size: 1.5rem;
+                  margin: 0 0 56px;
+                }
             }    
+
+            .faq__item-textblock {
+                @include tablet-pr {
+                  background: #f5f5f5;
+                  padding: 20px 38px;
+                }
+                
+                @include tablet-pr {
+                  background: #f5f5f5;
+                  padding: 23px 20px;
+                }
+            }
                 .faq__text-column-wrap {
                     column-count: 3;
                     column-gap: 60px;
+
+                    @include tablet-pr {
+                        column-count: 1;
+                    }
+
+                    &--mobile {
+                        display: none;
+
+                        @include tablet-pr {
+                            display: block;
+                        }
+                    }
+
+                    &--desktop {
+                        @include tablet-pr {
+                            display: none;
+                        }
+                    }
                 }
                     .faq__item-block {
+                        margin: 50px 0 0;
+                        
+                        &:first-of-type {
+                            margin: 0;
+                        }
+                       
+                        @include tablet-pr {
+                            margin: 36px 0 0;
+                        }
                     }
                         .faq__item-title {
                             color:  #000000;
                             font-size: 1.625rem;
                             font-weight: 400;
-                            margin: 50px 0 12px;
+                            margin: 0 0 12px;
                             line-height: 1.17;
+
+                            @include tablet-pr {
+                                background: #ccc;
+                                color:  #000;
+                                font-size: 1.125rem;
+                                padding: 9.5px 0;
+                                margin: 0;
+                                position: relative;
+
+                                &:after {
+                                    content: '';
+                                    width: 15px;
+                                    height: 4px;
+                                    background: #000;
+                                    right: 42px;
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+
+                                    @include mobile {
+                                        right: 23px;
+                                    }
+                                }
+                            }
+
+                            @include mobile {
+                               font-size: 1rem;
+                               text-align: start;
+                               padding: 9.5px 80px 9.5px 20px;
+                            }
                         }
 
                         .faq__item-text {
@@ -59,10 +189,22 @@
                             &:last-of-type {
                                 margin: 0;
                             }
+
+                            @include tablet-pr {
+                               font-size: 1rem;
+                            }
+
+                            @include mobile {
+                               font-size: 0.875rem;
+                            }
                         }
                         
                         .faq__item-linkwrap {
                             margin: 20px 0 -16px;
+
+                            @include tablet-pr {
+                               margin: 25px 0 0;
+                            }
                         }
                             .faq__item-link {
                                 color:  #2d6fc1;
