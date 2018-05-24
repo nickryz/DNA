@@ -21,16 +21,10 @@ body {
 						 center bottom,
 						 center bottom;
 	background-size: 1920px;
-	overflow-x: hidden;
-
-	@include tablet-pr {
-		// background-size: 1920px;
-		// background-position: center top,
-		// 				 center -50px;
-	}
 }
 
 .maincontent {
 	flex-grow: 1;
+	overflow: hidden;
 }
 
